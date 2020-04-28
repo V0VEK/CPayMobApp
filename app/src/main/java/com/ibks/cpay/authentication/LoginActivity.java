@@ -1,4 +1,4 @@
-package com.ibks.cpay;
+package com.ibks.cpay.authentication;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +16,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.ibks.cpay.HexConverter;
+import com.ibks.cpay.R;
 import com.ibks.cpay.keymanagement.KeyManagementLogInActivity;
+import com.ibks.cpay.payment.StartActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -127,6 +130,14 @@ public class LoginActivity extends AppCompatActivity {
         ShowToast(role + ":" + token);
 
         StartBasicActivity();
+    }
+
+    public void SignInButtonClicked(View v) {
+        StartSignInActivity();
+    }
+
+    private void StartSignInActivity() {
+
     }
 
     private void ShowToast(String text) {

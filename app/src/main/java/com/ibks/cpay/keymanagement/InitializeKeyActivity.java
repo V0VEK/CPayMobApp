@@ -12,50 +12,49 @@ import android.widget.Toast;
 
 import com.ibks.cpay.R;
 
-public class KeyManagementLogInActivity extends AppCompatActivity {
+public class InitializeKeyActivity extends AppCompatActivity {
 
     EditText editText1;
     EditText editText2;
-    Button button2;
     Button button1;
+    Button button2;
     TextView textView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_key_management_log_in);
+        setContentView(R.layout.activity_initialize_key);
 
-        editText1 = findViewById(R.id.CustodianPassword1);
-        editText2 = findViewById(R.id.CustodianPassword2);
-        button2 = findViewById(R.id.CustodianInputButton2);
-        button1 = findViewById(R.id.CustodianInputButton1);
-        textView2 = findViewById(R.id.CustodianPassword2Text);
+        editText1 = findViewById(R.id.CustodianComponent1);
+        editText2 = findViewById(R.id.CustodianComponent2);
 
+        button1 = findViewById(R.id.ComponentInputButton1);
+        button2 = findViewById(R.id.ComponentInputButton2);
+
+        textView2 = findViewById(R.id.CustodianComponent2Text);
     }
 
-    public void InputClicked1 (View v) {
-        // TODO: Read password in memory
-        ShowToast("First password inputted");
-
-
-        editText1.setEnabled(false);
+    public void ComponentInputButton1Clicked(View v) {
+        ShowToast("First component was inputted");
+        // TODO: Remember key component
         editText1.setFocusable(false);
+        editText1.setEnabled(false);
         button1.setVisibility(View.INVISIBLE);
 
-        textView2.setVisibility(View.VISIBLE);
         editText2.setVisibility(View.VISIBLE);
         button2.setVisibility(View.VISIBLE);
+        textView2.setVisibility(View.VISIBLE);
     }
 
-    public void InputClicked2 (View v) {
-        // TODO: Read password in memory
-        ShowToast("Second password inputted");
+    public void ComponentInputButton2Clicked(View v) {
+        // TODO: Remember key component
+        // TODO: Send request to backend service
+        // TODO: Implement secure storage for key components
 
-        // TODO: Send auth request
-        StartKeyManagementInterfaceActivity();
+        ReturnToKeyManagement();
     }
 
-    private void StartKeyManagementInterfaceActivity() {
+    private void ReturnToKeyManagement() {
         Intent intent = new Intent(this, KeyManagementInterfaceActivity.class);
         startActivity(intent);
         finish();

@@ -1,4 +1,4 @@
-package com.ibks.cpay;
+package com.ibks.cpay.payment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.ibks.cpay.R;
 import com.ibks.cpay.payment.PaymentActivity;
 
 public class StartActivity extends AppCompatActivity {

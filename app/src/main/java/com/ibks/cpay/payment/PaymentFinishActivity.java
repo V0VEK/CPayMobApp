@@ -2,7 +2,6 @@ package com.ibks.cpay.payment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.ibks.cpay.R;
-import com.ibks.cpay.StartActivity;
 
 import android.content.Intent;
 import android.os.Bundle;

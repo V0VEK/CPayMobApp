@@ -9,4 +9,11 @@
     <string name="input">INPUT</string>
     <string name="first_key_component_custodian_password">First key component custodian password</string>
     <string name="second_key_component_custodian_password">Second key component custodian password</string>
+    <string name="new_terminal_key">NEW TERMINAL KEY</string>
+    <string name="change_work_keys">CHANGE WORK KEYS</string>
+    <string name="key_component">Key component</string>
+    <string name="first_key_component">First key component</string>
+    <string name="second_key_component">Second key component</string>
+    <string name="delete_keys">DELETE KEYS</string>
+    <string name="sign_in">SIGN IN</string>
 </resources>
