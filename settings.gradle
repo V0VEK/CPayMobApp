@@ -1,0 +1,2 @@
+rootProject.name='CPay'
+include ':app'

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tags for requests to server -->
+    <string name="APP_USER_LOGIN">login</string>
+    <string name="APP_USER_PASSWORD_HASH">password_hash</string>
+    
+    <!-- Tags for responses from server -->
+    <string name="SESSION_TOKEN">session_token</string>
+    <string name="ROLE_ID">role_id</string>
+</resources>
