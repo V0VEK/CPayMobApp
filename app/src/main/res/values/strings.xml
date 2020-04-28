@@ -16,4 +16,7 @@
     <string name="second_key_component">Second key component</string>
     <string name="delete_keys">DELETE KEYS</string>
     <string name="sign_in">SIGN IN</string>
+    <string name="e_mail_confirmation_code">E-mail confirmation code</string>
+    <string name="send">SEND</string>
+    <string name="create">CREATE</string>
 </resources>

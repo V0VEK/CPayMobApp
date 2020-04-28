@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".authentication.SignInActivity"></activity>
+        <activity android:name=".authentication.UserCreationActivity"></activity>
+        <activity android:name=".authentication.SignInActivity" />
         <activity android:name=".keymanagement.InitializeKeyActivity" />
         <activity android:name=".keymanagement.KeyManagementInterfaceActivity" />
         <activity android:name=".keymanagement.KeyManagementLogInActivity" />
