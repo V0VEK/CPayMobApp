@@ -16,6 +16,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.ibks.cpay.keymanagement.KeyManagementLogInActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -67,6 +68,10 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    public void KeyManagementClicked(View v) {
+        StartKeyManagementLogInActivity();
+    }
+
     private void SendLoginRequest() {
         RequestQueue queue = Volley.newRequestQueue(this);
         String url = getString(R.string.SERVER) + getString(R.string.LOGIN_REQ);
@@ -107,6 +112,12 @@ public class LoginActivity extends AppCompatActivity {
 
     private void StartBasicActivity() {
         Intent intent = new Intent(this, StartActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    private void StartKeyManagementLogInActivity() {
+        Intent intent = new Intent(this, KeyManagementLogInActivity.class);
         startActivity(intent);
         finish();
     }

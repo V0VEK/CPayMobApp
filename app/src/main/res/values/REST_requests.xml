@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="HELLO_WORLD_REQ">/hello</string>
-    <string name="LOGIN_REQ">/login</string>
+    <string name="LOGIN_REQ">/login/mobile</string>
 </resources>

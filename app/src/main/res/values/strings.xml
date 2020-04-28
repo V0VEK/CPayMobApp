@@ -5,4 +5,8 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="log_in">LOG IN</string>
+    <string name="key_management">KEY MANAGEMENT</string>
+    <string name="input">INPUT</string>
+    <string name="first_key_component_custodian_password">First key component custodian password</string>
+    <string name="second_key_component_custodian_password">Second key component custodian password</string>
 </resources>

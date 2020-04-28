@@ -23,19 +23,19 @@
         android:id="@+id/appEntryLoginField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autofillHints="@string/login"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/login"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/appEntryPasswordField"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.932"
-        android:autofillHints="@string/login"
+        app:layout_constraintVertical_bias="0.926"
         tools:ignore="TextFields" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/LogInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/log_in"
@@ -46,4 +46,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appEntryPasswordField"
         app:layout_constraintVertical_bias="0.094" />
+
+    <Button
+        android:id="@+id/KeyManagementButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_management"
+        android:onClick="KeyManagementClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogInButton"
+        app:layout_constraintVertical_bias="0.926" />
 </androidx.constraintlayout.widget.ConstraintLayout>
