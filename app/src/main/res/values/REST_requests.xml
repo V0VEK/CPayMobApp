@@ -2,4 +2,5 @@
 <resources>
     <string name="HELLO_WORLD_REQ">/hello</string>
     <string name="LOGIN_REQ">/login/mobile</string>
+    <string name="KEY_INIT">/key_init/mobile</string>
 </resources>

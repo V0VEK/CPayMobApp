@@ -19,4 +19,5 @@
     <string name="e_mail_confirmation_code">E-mail confirmation code</string>
     <string name="send">SEND</string>
     <string name="create">CREATE</string>
+    <string name="exit">EXIT</string>
 </resources>

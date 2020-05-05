@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.ibks.cpay.R;
+import com.ibks.cpay.authentication.LoginActivity;
 import com.ibks.cpay.payment.PaymentActivity;
 
 public class StartActivity extends AppCompatActivity {
@@ -22,6 +23,18 @@ public class StartActivity extends AppCompatActivity {
 
     public void StartPaymentButtonClicked(View view) {
         StartPaymentActivity();
+    }
+
+
+    public void StartActivityExitClicked(View v) {
+
+        ReturnToPreviousActivity();
+    }
+
+    private void ReturnToPreviousActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     private void StartPaymentActivity () {

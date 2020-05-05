@@ -39,8 +39,6 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    // TODO: difference between key management activity and transactions processing
-
     // TODO: Check password and role
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void LogInClicked(View v) {
@@ -137,7 +135,17 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void StartSignInActivity() {
+        Intent intent = new Intent(this, SignInActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
+    public void LogInActivityExitClicked(View v) {
+        Exit();
+    }
+
+    private void Exit() {
+        finish();
     }
 
     private void ShowToast(String text) {

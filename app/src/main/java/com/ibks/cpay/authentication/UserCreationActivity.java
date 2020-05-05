@@ -18,11 +18,21 @@ public class UserCreationActivity extends AppCompatActivity {
 
     public void UserCreateButtonClicked(View v) {
         // TODO: Send request to the backend and check response
-        
+
         StartLoginActivity();
     }
 
     private void StartLoginActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void UserCreationExitClicked(View v) {
+        BackToLoginActivity();
+    }
+
+    private void BackToLoginActivity() {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         finish();

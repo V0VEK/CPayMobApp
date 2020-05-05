@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Tags for requests to server -->
-    <string name="APP_USER_LOGIN">login</string>
-    <string name="APP_USER_PASSWORD_HASH">password_hash</string>
+    <string name="LOGIN_TAG">login</string>
+    <string name="PASSWORD_HASH_TAG">password_hash</string>
+    <string name="CONFIRMATION_CODE_HASH_TAG">confirmation_code_hash</string>
+    
+    <!-- Tags for payment requests -->
+    <string name="PAN_TAG">pan</string>
+    <string name="EXP_DATE_TAG">exp_date</string>
+    <string name="CH_NAME_TAG">ch_name</string>
+    <string name="AMOUNT_TAG">amount</string>
     
     <!-- Tags for responses from server -->
-    <string name="SESSION_TOKEN">session_token</string>
-    <string name="ROLE_ID">role_id</string>
+    <string name="ROLE_ID_TAG">role_id</string>
+    <string name="STATUS_TAG">status</string>
+    <string name="PAYMENT_STATUS_TAG">payment_status</string>
+
+    <!-- Both directions -->
+    <string name="SESSION_TOKEN_TAG">session_token</string>
+    <string name="KCV_TAG">kcv</string>
+    <string name="KCV_LIST_TAG">kcv_list</string>
+    <string name="KEYS_CRYPTOGRAMS_LIST_TAG">keys_cryptograms_list</string>
 </resources>

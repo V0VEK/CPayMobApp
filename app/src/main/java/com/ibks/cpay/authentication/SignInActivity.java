@@ -22,6 +22,16 @@ public class SignInActivity extends AppCompatActivity {
         StartUserCreationActivity();
     }
 
+    public void SignInActivityExitClicked (View v) {
+        BackToPreviousActivity();
+    }
+
+    private void BackToPreviousActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
 
     private void StartUserCreationActivity() {
         Intent intent = new Intent(this, UserCreationActivity.class);

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.ibks.cpay.R;
+import com.ibks.cpay.authentication.LoginActivity;
 
 public class KeyManagementInterfaceActivity extends AppCompatActivity {
 
@@ -32,6 +33,17 @@ public class KeyManagementInterfaceActivity extends AppCompatActivity {
     public void DeleteAllKeysButtonClicked(View v) {
         // TODO: implement all keys deletion
         ShowToast("All keys are deleted");
+    }
+
+    public void KeyManagementExitClicked(View v) {
+
+        ReturnToLoginActivity();
+    }
+
+    private void ReturnToLoginActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     private void ShowToast(String text) {

@@ -54,10 +54,17 @@ public class InitializeKeyActivity extends AppCompatActivity {
         ReturnToKeyManagement();
     }
 
+    // TODO: Maybe some activity doesn't need to be finished because after some actions we will comeback to it
     private void ReturnToKeyManagement() {
         Intent intent = new Intent(this, KeyManagementInterfaceActivity.class);
         startActivity(intent);
         finish();
+    }
+
+
+    public void KeyInitializeExitClicked(View v) {
+
+        ReturnToKeyManagement();
     }
 
     private void ShowToast(String text) {
